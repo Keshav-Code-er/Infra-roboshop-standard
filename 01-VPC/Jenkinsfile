@@ -11,7 +11,7 @@ pipeline {
                               ls -ltr
                               cd 01-VPC
                               pwd
-                              terraform init
+                              
 
                          '''
                   }
