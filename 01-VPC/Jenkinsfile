@@ -8,10 +8,10 @@ pipeline {
             stage('Init') {
                   steps {
                         sh'''
-                        cd 01-VPC
-                        ls -ltr
-                        pwd
-                        terraform init
+                              cd 01-VPC
+                              ls -ltr
+                              pwd
+                              terraform init
 
                          '''
                   }
@@ -19,10 +19,10 @@ pipeline {
             stage('Plan') {
                   steps {
                           sh'''
-                          cd 01-VPC 
-                          ls -ltr
-                          pwd
-                          terraform plan
+                              cd 01-VPC 
+                              ls -ltr
+                              pwd
+                              terraform plan
 
                          '''
                   }
