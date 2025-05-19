@@ -8,8 +8,8 @@ pipeline {
             stage('Init') {
                   steps {
                         sh'''
-                              cd 01-VPC
                               ls -ltr
+                              cd 01-VPC
                               pwd
                               terraform init
 
