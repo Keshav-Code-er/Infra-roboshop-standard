@@ -7,24 +7,22 @@ pipeline {
       stages {
             stage('Init') {
                   steps {
-                        sh'''
-                              cd 01-VPC
-                              terraform init
-                              
-                              
-
-                         '''
+                              sh''' ls -ltr
+                                    pwd
+                                    cd 01-VPC
+                                    terraform init
+                                '''
                   }
             }
             stage('Plan') {
                   steps {
                           sh'''
-                              cd 01-VPC 
-                              ls -ltr
-                              pwd
-                              terraform plan
+                                    cd 01-VPC 
+                                    ls -ltr
+                                    pwd
+                                    terraform plan
 
-                         '''
+                             '''
                   }
             }
 
