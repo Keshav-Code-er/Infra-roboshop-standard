@@ -1,7 +1,7 @@
 pipeline {
       agent { node { label 'Agent-1' } }
       options{
-            ansiColor('xterm')
+            ansiColor('catchError')
       }
 
       stages {
