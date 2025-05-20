@@ -34,8 +34,14 @@ pipeline {
 
              stage('Apply') {
                   steps {
-                         sh 'cd 01-VPC'
-                         sh 'terraform apply -auto-approve'
+                         sh'''
+                            pwd
+                            ls -ltr
+                            cd 01-VPC
+                            terraform apply -auto-approve
+
+
+                         '''
                   }
             }
       }
